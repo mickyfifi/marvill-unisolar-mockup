@@ -12,7 +12,7 @@
 <body>
     <section class="top header-row">
         <div class="contact-info" style="font-size: 11px">rjvillanueva@marvill.com | +63.2. 7617-8455</div>
-        <ul class="social-icons" style="justify-content: end;">
+        <ul class="social-icons">
             <li>
                 <a href="https://web.facebook.com/webdevmarvill/"><i class="fa fa-facebook-square fa-2x"></i></a>
             </li>
@@ -32,11 +32,13 @@
     </section>  
     <section class="bottom header-row">
         <a href="https://www.marvill.com"><img src="./img/marvill-header-banner.jpg" width="300px"></a>
-        <div class="nav">
+        <!-- For least 1200px width -->
+        <button class="nav-button" onclick="toggleVisibilityElement('header-nav', 'flex');"><i class="fa fa-bars fa-2x"></i></button>
+        <div id="header-nav" class="nav">
             <a href="https://www.google.com">HOME</a>
             <div class="dropdown">
-                <a href="https://marvill.com/about/" class="nav-item-with-sub">ABOUT<i class="fa fa-angle-double-down fa-lg"></i></a>
-                <div class="sub-menu">
+                <a id="about-item" href="https://marvill.com/about/" class="nav-item-with-sub">ABOUT<i class="fa fa-angle-double-down fa-lg"></i></a>
+                <div id="about-sub-menu" class="sub-menu">
                     <a href="https://marvill.com/about/">Our Company</a>
                     <a href="https://marvill.com/about/our-mission/">Our Mission</a>
                     <a href="https://marvill.com/about/our-method/">Our Method</a>
@@ -46,8 +48,8 @@
             <a href="https://marvill.com/services/">SERVICES</a>
             <a href="https://marvill.com/portfolio/">PORTFOLIO</a>
             <div class="dropdown">
-                <a href="https://marvill.com/news-and-blogs" class="nav-item-with-sub">UPDATES<i class="fa fa-angle-double-down fa-lg"></i></a>
-                <div class="sub-menu updates">
+                <a id="updates-item" href="https://marvill.com/news-and-blogs" class="nav-item-with-sub">UPDATES<i class="fa fa-angle-double-down fa-lg"></i></a>
+                <div id="updates-sub-menu"class="sub-menu updates">
                     <a href="https://marvill.com/news-and-blogs/">BLOGS & NEWS</a>
                     <a href="https://marvill.com/marvill-updates/">MARVILL UPDATES</a>
                     <a href="https://marvill.com/social-feeds/">SOCIAL FEED</a>
@@ -57,17 +59,15 @@
             <a href="https://marvill.com/contact/">CONTACT</a>
             <a href="https://marvill.com/theshop/">E-SHOP</a>
             <a href="https://www.google.com"><i class="fa fa-search"></i></a>
-        </div>
-        <button class="mobile nav-button"><i class="fa fa-bars fa-2x"></i></button>
+        </div>     
     </section>
     <section>
-
         <img class="featured-image" src="./img/unisolar-banner.png">
         <div class="container">
             <h1>Unisolar</h1>
         </div>
     </section>
     
-    
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
