@@ -1,14 +1,11 @@
 function toggleVisibilityElement(id, display) {
     let element = document.getElementById(id);
     let currentStyle = getComputedStyle(element);
-    console.log(currentStyle.getPropertyValue('display'));
     if (currentStyle.getPropertyValue('display') != 'none') {
         display = 'none';
     }
     element.setAttribute('style', `display: ${display} !important`);
 }
-
-console.log(window.screen.width);
 
 if (window.screen.width <= 1200) {
     document.querySelectorAll('.nav-item-with-sub').forEach(element => {
@@ -22,3 +19,17 @@ if (window.screen.width <= 1200) {
         })
     });
 }
+
+let floatingButtonUp = document.getElementById("floatingButtonUp");
+
+window.onscroll = event => {
+    if (document.documentElement.scrollTop > 0) {
+        floatingButtonUp.style.display = "inline-block";
+    } else {
+        floatingButtonUp.style.display = "none";
+    }
+};
+
+floatingButtonUp.addEventListener("click", event => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
