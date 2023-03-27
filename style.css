@@ -320,8 +320,8 @@ button {
     min-height: 38px;
     border-radius: 24px;
     position: fixed;
-    bottom: 2%;
-    left: 1%;
+    bottom: 2.5%;
+    left: 1.5%;
     cursor: pointer;
     display: none;
 }
@@ -365,6 +365,8 @@ button {
         height: auto;
     }
 
-
+    .top.footer-row {
+        padding: 20px 0;
+    }
 
 }
