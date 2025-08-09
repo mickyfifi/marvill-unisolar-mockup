@@ -1,2 +1,2 @@
-# plain-unisolar
-copy marvill's unisolar site by plain html and css
+# marvill--unisolar-mockup
+copy marvill's unisolar site in html and vanilla css
